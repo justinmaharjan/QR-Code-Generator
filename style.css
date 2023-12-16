@@ -5,8 +5,17 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #fceed1;
+.bodyy {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(38, 38, 38);
+    color: white;
+    position: relative;
+}
+
+p {
+    color: white;
+
 }
 
 .container {
@@ -16,11 +25,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: rgb(83, 81, 81);
     border-radius: 10px;
 }
 
 .container p {
+    color: white;
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 8px;
@@ -29,38 +39,42 @@ body {
 .container input {
     width: 100%;
     height: 50px;
-    border: 2px solid  black;
+    border: 2px solid white;
     outline: 0;
     padding: 10px;
     margin: 10px 0 20px;
     border-radius: 5px;
 }
-.container button{
-    width : 100%;
+
+.container button {
+    width: 100%;
     height: 50px;
-    background: #7d3cff;
-    color: #fff;
+    color: black;
+    background: rgb(76, 226, 76);
     border: 0;
     outline: 0;
     border-radius: 5px;
-    box-shadow:0 10px 10px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     margin: 20px 0;
     font-weight: 500;
 }
-#imgBox{
+
+#imgBox {
     width: 200px;
     border-radius: 5px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s;
 }
-#imgBox img{
+
+#imgBox img {
     width: 100%;
     padding: 10px;
 }
-#imgBox.show-img{
+
+#imgBox.show-img {
     max-height: 300px;
     margin: 10px auto;
-    border: 1px solid #d1d1d1;
+    border: 1px solid white;
 }
